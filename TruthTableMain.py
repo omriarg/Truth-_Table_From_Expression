@@ -66,9 +66,6 @@ class TruthTableGenerator:
 
     def calculate_truth_table(self):
         """Fill the truth table with binary values and evaluate the expression."""
-        if self.var_count > 6 or not self.is_valid:
-            print("Invalid Expression\n")
-            return False
 
         for i in range(len(self.table)):
             temp = i
